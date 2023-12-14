@@ -1,0 +1,138 @@
+.create_group_section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: #2f2f2fbf;
+}
+.create_note_popup {
+  position: relative;
+  background-color: #fff;
+  width: 740px;
+  height: 317px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  padding: 40px 10px 10px 30px;
+}
+.create_note_popup h2 {
+  font-weight: 500;
+  font-size: 27px;
+  margin-bottom: 45px;
+}
+.input_name_color {
+  display: flex;
+  margin-bottom: 25px;
+  align-items: center;
+  position: relative;
+}
+.input_name_color input {
+  width: 70%;
+  height: 41px;
+  font-size: 20px;
+  border-radius: 18px;
+  border: 2px solid #979797;
+  padding: 0 40px;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  right: 60px;
+  bottom: -15px;
+}
+
+.inputLabel {
+  font-weight: 500;
+  font-size: 23px;
+  margin-right: 25px;
+}
+.inputButton {
+  background-color: #001f8b;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  padding: 10px 50px;
+  border-radius: 11px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+}
+.inputColor {
+  display: flex;
+}
+.inputColor input {
+  width: 40px;
+  display: none;
+}
+.colorCircle {
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.336);
+}
+.addGroup {
+  font-size: 50px;
+  cursor: pointer;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  background: #16008b;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (width < 800px) {
+  .create_note_popup {
+    max-width: 320px;
+    height: 230px;
+    padding: 30px 10px 10px 20px;
+  }
+  .create_note_popup h2 {
+    font-size: 18px;
+  }
+  /* .create_note_popup h2 span */
+  .input_name_color input {
+    font-size: 13px;
+    height: 30px;
+    width: 65%;
+    padding: 5px 10px;
+  }
+  .inputLabel {
+    font-size: 13px;
+    margin-right: 5px;
+  }
+  .inputColor input,
+  .colorCircle {
+    width: 25px;
+    height: 25px;
+  }
+  .colorCircle {
+    margin-right: 5px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.418);
+  }
+  .inputButton {
+    padding: 8px 20px;
+    font-size: 15px;
+    bottom: 10px;
+  }
+}
